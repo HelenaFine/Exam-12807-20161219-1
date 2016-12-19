@@ -1,11 +1,13 @@
 package dao.impl;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+
 
 import bean.Film;
 import common.ConnectionFactory;
@@ -41,12 +43,39 @@ public class FilmDaoImpl implements FilmDao{
 	//删除选中film
 	public boolean deleteFilm(long id) throws SQLException {
 		Connection conn = ConnectionFactory.getConn();
-		Statement st = conn.createStatement();
-		String sql="delete from film,film_actor where film_actor.film_id=film.film_id and film_id="+id;
-		boolean flag = st.execute(sql);
+		String sql="delete from film where film_id=?";
+		PreparedStatement ps = conn.prepareStatement(sql);
+		ps.setLong(1, id);
+		boolean flag = ps.execute();
 		conn.close();
 		return flag;
 	}
+
+	
+	
+	//插入Film
+	public void insertFilm(Film film) throws SQLException {
+		Connection conn = ConnectionFactory.getConn();
+		String sql="insert into film (film_id,title,description,language_id) values(?,?,?,?)";
+		PreparedStatement ps = conn.prepareStatement(sql);
+		ps.setLong(1, film.getFilm_id());
+		ps.setString(2,film.getTitle());
+		ps.setString(3, film.getDescription());
+		ps.setLong(4, film.getLanguage_id());
+		ps.execute();
+		
+	}
+
+	
+	//更新
+	
+	public  void  update(Film film) throws SQLException {
+		Connection conn = ConnectionFactory.getConn();
+		String sql = "update film set title="+film.getTitle()+",description="+film.getDescription()+",language_id="+film.getLanguage_id() +"where film_id="+film.getFilm_id();
+		Statement st = conn.createStatement();
+		st.executeQuery(sql);
+	}
+	
 	
 	
 	

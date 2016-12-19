@@ -37,15 +37,14 @@
 		</div>
 		<div id="navbar" class="collapse navbar-collapse">
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="../login.jsp">用户登录</a></li>
+				<li class="active"><a href="login.jsp">用户登录</a></li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle"
 					data-toggle="dropdown"> Film相关 <b class="caret"></b>
 				</a>
 					<ul class="dropdown-menu">
-						<li><a href="#">显示全部Film</a></li>
-						<li><a href="#">编辑Film</a></li>
+						<li><a href="showFilms.jsp">显示全部Film</a></li>
 						<li class="divider"></li>
-						<li><a href="#">修改File</a></li>
+						<li><a href="insert.jsp">插入File</a></li>
 					</ul></li>
 			</ul>
 		</div>
@@ -58,7 +57,7 @@
 	<div class="container" id="myDiv">
 		<div class="starter">
 		<form action="<%= request.getContextPath()%>/service/FilmServlet" method="post">
-			<button type="submit" class="btn btn-default">点击查看全部</button>
+			<button type="submit" class="btn btn-default">点击刷新查看全部</button>
 			</form>
 		</div>
 	</div>
@@ -94,7 +93,7 @@
 						
 						<ul class="dropdown-menu">
 							<li><a href="DeleteServlet?id=${filmList.film_id}">删除</a></li>
-							<li><a href="#">更新</a></li>
+							<li><a href="UpdateServlet?id=${filmList.film_id}">更新</a></li>
 						</ul>
 					</div>
 					</form>

@@ -7,7 +7,7 @@
 <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<title>登录失败</title>
+<title>登录成功</title>
 <style type="text/css">
 	.form-horizontal{
 		margin:100px;
@@ -23,11 +23,11 @@
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
-				<a href="../index.jsp" class="navbar-brand">首页</a>
+				<a href="index.jsp" class="navbar-brand">首页</a>
 			</div>
 			<div id="navbar" class="collapse navbar-collapse">
 				<ul class="nav navbar-nav">
-					<li ><a href="../login.jsp">用户登录</a></li>
+					<li ><a href="login.jsp">用户登录</a></li>
 					<li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                     Film相关
@@ -53,9 +53,9 @@
 
 <div class="container" id="mydiv">
    <div class="jumbotron">
-        <h1>登录失败</h1>
-        <p><a class="btn btn-primary btn-lg" role="button" href="../login.jsp">
-        返回重新登录</a>
+        <h1>删除成功</h1>
+        <p><a class="btn btn-primary btn-lg" role="button" href="../showFilms.jsp">
+       返回继续查看</a>
       </p>
    </div>
 </div>

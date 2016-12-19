@@ -33,10 +33,9 @@
                     <b class="caret"></b>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="#">查询全部Film</a></li>
-                    <li><a href="#">新增Film</a></li>
+                    <li><a href="showFilms.jsp">查询全部Film</a></li>
                     <li class="divider"></li>
-                    <li><a href="#">另一个分离的链接</a></li>
+                    <li><a href="insert.jsp">新增film</a></li>
                 </ul>
             </li>
 				</ul>

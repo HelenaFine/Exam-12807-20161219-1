@@ -35,9 +35,8 @@
                 </a>
                 <ul class="dropdown-menu">
                     <li><a href="showFilms.jsp">查询全部Film</a></li>
-                    <li><a href="#">新增Film</a></li>
                     <li class="divider"></li>
-                    <li><a href="#">修改File</a></li>
+                    <li><a href="insert.jsp">新增Film</a></li>
                 </ul>
             </li>
 				</ul>

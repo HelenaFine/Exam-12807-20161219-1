@@ -36,8 +36,26 @@
     <url-pattern>/service/DeleteServlet</url-pattern>
   </servlet-mapping>
   
-  
+    
+  <servlet>
+    <servlet-name>InsertServlet</servlet-name>
+    <servlet-class>service.InsertServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InsertServlet</servlet-name>
+    <url-pattern>/service/InsertServlet</url-pattern>
+  </servlet-mapping>
  
+ 
+ 
+  <servlet>
+    <servlet-name>UpdateServlet</servlet-name>
+    <servlet-class>service.UpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateServlet</servlet-name>
+    <url-pattern>/service/UpdateServlet</url-pattern>
+  </servlet-mapping>
  
  
 </web-app>

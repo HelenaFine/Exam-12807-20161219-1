@@ -34,10 +34,9 @@
                     <b class="caret"></b>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="../showFilms.jsp">查询全部Film</a></li>
-                    <li><a href="#">新增Film</a></li>
+                    <li><a href="<%= request.getContextPath()%>/showFilms.jsp">查询全部Film</a></li>
                     <li class="divider"></li>
-                    <li><a href="#">修改File</a></li>
+                    <li><a href="../insert.jsp">插入File</a></li>
                 </ul>
             </li>
 				</ul>
@@ -55,7 +54,7 @@
 <div class="container" id="mydiv">
    <div class="jumbotron">
         <h1><%= request.getAttribute("username") %>,登录成功</h1>
-        <p><a class="btn btn-primary btn-lg" role="button" href="showFilms.jsp">
+        <p><a class="btn btn-primary btn-lg" role="button" href="<%= request.getContextPath()%>/showFilms.jsp">
         查看全部films</a>
       </p>
    </div>

@@ -7,7 +7,7 @@
 <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<title>登录成功</title>
+<title>添加成功</title>
 <style type="text/css">
 	.form-horizontal{
 		margin:100px;
@@ -35,9 +35,8 @@
                 </a>
                 <ul class="dropdown-menu">
                     <li><a href="showFilms.jsp">查询全部Film</a></li>
-                    <li><a href="#">新增Film</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">另一个分离的链接</a></li>
+                   <li class="divider"></li>
+                    <li><a href="insert.jsp">新增Film</a></li>
                 </ul>
             </li>
 				</ul>
@@ -54,7 +53,7 @@
 
 <div class="container" id="mydiv">
    <div class="jumbotron">
-        <h1>删除成功</h1>
+        <h1>添加成功</h1>
         <p><a class="btn btn-primary btn-lg" role="button" href="../showFilms.jsp">
        返回继续查看</a>
       </p>
